@@ -1,0 +1,40 @@
+﻿OxA/UGAMS,Serial,Site.Name,Sample,Material,Element,Genus,Species,Date,Error
+UGAMS,44178,Cave.Pool,EG-035,bioapatite,metacarpus,Panthera,pardus,20040,40
+OxA,39091,Nahal.Hever,HE-004,collagen,radius,Panthera,pardus,5317,25
+OxA,38732,Nahal.Hever,HE-010,collagen,tibia,Panthera,pardus,4477,26
+OxA,-88,Nahal.Hever,HE-053,collagen,phalanx,Panthera,pardus,4508,30
+OxA,39107,Nahal.Hever,HE-195,collagen,pelvis,Panthera,pardus,4945,25
+OxA,39109,Nahal.Hever,HE-230,collagen,mandible,Panthera,pardus,4935,26
+OxA,39110,Nahal.Hever,HE-231,collagen,tibia,Panthera,pardus,5312,25
+UGAMS,44182,Hahal.Rahaf,NR2-005,bioapatite,phalanx 2,Panthera,pardus,28680,70
+UGAMS,44183,Hahal.Rahaf,NR2-006,bioapatite,phalanx 1,Panthera,pardus,26070,70
+OxA,39113,Qina.Cave,QN-021,collagen,vertebra,Hyaena,hyaena,96,19
+OxA,39114,Qina.Cave,QN-057,collagen,mandible,Vulpes,vulpes,3694,23
+UGAMS,44193,Cave.Skulls,SK-094,bioapatite,humerus,Vulpes,,10970,30
+UGAMS,44184,Cave.Skulls,SK-164,bioapatite,phalanx 1,Panthera,pardus,39500,180
+UGAMS,44187,Cave.Skulls,SK-605,bioapatite,scaphoid,Panthera,pardus,40160,240
+UGAMS,44189,Cave.Skulls,SK-702,bioapatite,phalanx 2,Panthera,pardus,31980,100
+UGAMS,44190,Cave.Skulls,SK-703,bioapatite,metatarsus,Panthera,pardus,3200,30
+OxA,39177,Tsavoa.Cave,TS-006,collagen,humerus,Hyaena,hyaena,120,19
+OxA,39214,Nahal.Hever,HE-008,collagen,pelvis,Panthera,pardus,5301,25
+OxA,39216,Nahal.Hever,HE-054,collagen,metacarpus,Panthera,pardus,6239,26
+OxA,39217,Nahal.Hever,HE-134,collagen,mandible,Vulpes,cana,2233,20
+OxA,39231,Tsavoa.Cave,TS-058,collagen,mandible,Hyaena,hyaena,784,19
+OxA,39253,Qina.Cave,QN-023,collagen,mandible,Hyaena,hyaena,724,19
+OxA,39257,Qina.Cave,QN-036,collagen,mandible,Hyaena,hyaena,1614,20
+OxA,39258,Qina.Cave,QN-048,collagen,humerus,Hyaena,hyaena,2412,20
+OxA,47465,Nahal.Hever,HE-124,collagen,vertebra,Panthera,pardus,5375,28
+OxA,47473,Nahal.Hever,HE-232,collagen,tibia,Panthera,pardus,5366,30
+UGAMS,46062,Cave.Pool,EG-015,collagen,mandible,Vulpes,cana,580,20
+UGAMS,46064,EG.Byz.hadas,EG-039,bioapatite,cranium,Hyaena,hyaena,710,20
+UGAMS,46087,Cave.Skulls,SK-220,bioapatite,mandible,Vulpes,cana,5480,20
+UGAMS,46106,Cave.Skulls,SK-660,collagen,mandible,Vulpes,cana,5760,25
+UGAMS,46108,Cave.Skulls,SK-877,collagen,mandible,Vulpes,cana,2320,20
+UGAMS,46123,Nahal.Hever,HE-089,TOC,scat,Hyaena,hyaena,1190,20
+UGAMS,46124,Nahal.Hever,HE-102,TOC,scat,Hyaena,hyaena,1140,20
+UGAMS,46130,Qina.Cave,QN-051,TOC,scat,Hyaena,hyaena,200,20
+UGAMS,46131,Qina.Cave,QN-062,TOC,scat,Hyaena,hyaena,150,20
+UGAMS,46132,Qina.Cave,QN-075,TOC,scat,Hyaena,hyaena,130,20
+UGAMS,46133,Qina.Cave,QN-080,TOC,scat,Hyaena,hyaena,190,20
+UGAMS,46135,Tsavoa.Cave,TS-020,TOC,scat,Hyaena,hyaena,500,20
+OxA,39850,Yoram.Cave,YO-003,collagen,mandible,Hyaena,hyaena,2983,19
