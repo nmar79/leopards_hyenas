@@ -15,7 +15,7 @@ my.data <- read.csv("HnL_radiocarb.csv")
 
 #remove empty rows and vars
 
-my.data <- my.data[1:39,1:10] 
+my.data <- my.data[1:46,1:10] 
 
 #create a vector of calibrated median dates to use in graphics
 #sometimes doesn't work outright, exit r-studio and run again...
@@ -42,13 +42,13 @@ TR.DT <- tibble(calBP = calibrated.dates, taxon = my.data$Genus, site = my.data$
 
 #plot taxon by date, entire range
 plot.1 <- ggplot(TR.DT, aes(y=calBP)) 
-plot.11 <- plot.1 + geom_violin(aes(x=taxon, col = taxon, fill = taxon), scale = "width", alpha = 0.20) + scale_y_reverse() + geom_jitter(aes(x=taxon, shape = site, color = taxon)) + scale_shape_manual(values=c(1:8)) + theme_classic()
+plot.11 <- plot.1 + geom_violin(aes(x=taxon, col = taxon, fill = taxon), scale = "width", alpha = 0.20) + scale_y_reverse() + geom_jitter(aes(x=taxon, shape = site, color = taxon)) + scale_shape_manual(values=c(1:12)) + theme_classic()
 plot.11
 
 #plot taxon by date, Holocene
 TR.DT.HOL <- filter(TR.DT, calBP < 10000)
 plot.2 <-ggplot(TR.DT.HOL, aes(y=calBP))
-plot.2 + geom_violin(aes(x=taxon, col = taxon, fill = taxon), scale = "width", alpha = 0.20) + scale_y_reverse() + geom_jitter(aes(x=taxon, col = taxon, shape=site)) + scale_shape_manual(values=c(1:8)) + theme_classic()
+plot.2 + geom_violin(aes(x=taxon, col = taxon, fill = taxon), scale = "width", alpha = 0.20) + scale_y_reverse() + geom_jitter(aes(x=taxon, col = taxon, shape=site)) + scale_shape_manual(values=c(1:12)) + theme_classic()
 
 
 ####################
@@ -72,7 +72,6 @@ res <- permTest(calib.data, marks = as.character(my.data$Genus), nsim = 1000, bi
 round(res$pValueList,4)
 summary(res)
 plot(res,focalm="Hyaena")
-plot(res, focalm = "Panthera")
 
 #probability by yearsBP
 leop_prob <- cbind.data.frame(res[["observed"]][["Panthera"]][["calBP"]], res[["observed"]][["Panthera"]][["PrDens"]])
