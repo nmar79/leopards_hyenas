@@ -24,10 +24,11 @@ calibrated.dates <- 1:length(my.data$Genus)
 
 for (i in seq_along(calibrated.dates)) {
 temp.1 <- calibrate(x=my.data$Date[i], errors = my.data$Error[i])
-calibrated.dates[i] <- temp.1$metadata$CRA
+temp.2 <- summary(temp.1)
+calibrated.dates[i] <- temp.2$MedianBP
 }
 
-rm(temp.1)
+rm(temp.1, temp.2)
 
 #print to a file the calibrated dates in full
 
@@ -38,7 +39,10 @@ for (i in seq_along(calibrated.dates)) {
 sink()
 
 #build tibble of calibrated median dates by genus, alias "taxon"
-TR.DT <- tibble(calBP = calibrated.dates, taxon = my.data$Genus, site = my.data$Site.Name)
+
+TR.DT <- tibble(calBP = calibrated.dates, uncalBP = my.data$Date, sample = my.data$Sample, taxon = my.data$Genus, site = my.data$Site.Name)
+
+write_csv(TR.DT, "dates.csv")
 
 #plot taxon by date, entire range
 plot.1 <- ggplot(TR.DT, aes(y=calBP)) 
