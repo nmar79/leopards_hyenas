@@ -54,6 +54,35 @@ TR.DT.HOL <- filter(TR.DT, calBP < 10000)
 plot.2 <-ggplot(TR.DT.HOL, aes(y=calBP))
 plot.2 + geom_violin(aes(x=taxon, col = taxon, fill = taxon), scale = "width", alpha = 0.20) + scale_y_reverse() + geom_jitter(aes(x=taxon, col = taxon, shape=site)) + scale_shape_manual(values=c(1:12)) + theme_classic()
 
+#Boxplot for hyena and leopard dates compared with 
+#random 20 dates from 0:10000 range
+panthera_holo <- filter(TR.DT.HOL, taxon == "Panthera")
+hyaena_holo <- filter(TR.DT.HOL, taxon == "Hyaena")
+random_holo <- sample(1:10000, 20, replace = TRUE)
+
+boxplot(panthera_holo$calBP ,hyaena_holo$calBP, random_holo, names = c("Panthera", "Hyaena", "20 dates (10^4)"), ylab = "calBP", col = c("green","yellow","grey"), notch = TRUE)
+
+#different median for hyaena, KW test...
+
+what <- 1:40
+what[1:20] <- "Hyaena"
+what[21:40] <- "random"
+
+what <- as.factor(what)
+date <- c(hyaena_holo$calBP, random_holo)
+kruski <- data.frame(what, date)
+print(kruskal.test(kruski$date,kruski$what))
+
+#not necessarily different for leopards, though...
+
+what_l <- 1:22
+what_l[1:11] <- "Leopard"
+what_l[12:22] <- "random"
+random_holo_l <- sample(1:10000, 11, replace = TRUE)
+what_l <- as.factor(what_l)
+date_l <- c(panthera_holo$calBP, random_holo_l)
+kruski_l <- data.frame(what_l, date_l)
+print(kruskal.test(date_l~what_l, kruski_l))
 
 ####################
 # SPDs
