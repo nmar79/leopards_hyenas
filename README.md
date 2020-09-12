@@ -7,5 +7,3 @@ calibrate_spd.R is a code that uses the 'rcarbon' package for calibrating the da
 
 #Bevan, A. and Crema, E.R. (2020) rcarbon v1.3.1: Methods for calibrating and analysing radiocarbon dates URL:
 # https://CRAN.R-project.org/package=rcarbon
-
-resampling_simulation.R is a probability simulation for drawing a bunch of leopard or hyena dates with the specific FAD/LAD from a random distribution of dates within a Holocene time frame.
